@@ -13,7 +13,7 @@ public class MyRadixConverter {
 		while (true) {
 		System.out.print("Enter the origin number system (2-16): ");
 		int originBase = myRadixConversion.nextInt();
-		/*If you type the Origin Base that is less than 2 and greater than 16, you will get invalid 			display output. You should type the Origin Base between 2 and 16.*/
+		/*If you type the Origin Base that is less than 2 and greater than 16, you will get invalid display output. You should type the Origin Base between 2 and 16.*/
 		if (originBase < 2 || originBase > 16) {
 		System.out.println("Invalid origin number system. Please enter a number between 2 and 16.");
 				continue;
