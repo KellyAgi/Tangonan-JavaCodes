@@ -12,10 +12,12 @@ public class GroceryStoreIfElse {
         Scanner groceryStore = new Scanner(System.in);
         double totalAmount,finalPrice;
         double discount = 0;
-        
+
+        // Get the total amount 
         System.out.print("Enter the total purchase amount: PHP ");
         totalAmount = groceryStore.nextInt();
-        
+
+        // Using if else to get the discount
         if (totalAmount > 10000){
            discount = 0.15;
         } else if (totalAmount >= 5001 && totalAmount <= 10000) {
@@ -26,11 +28,15 @@ public class GroceryStoreIfElse {
         } else {
             discount = 0;
         }
+        // Formula for discounted price.
         finalPrice = totalAmount - (totalAmount * discount);
-        
+
+        // Display the discounted price.
         System.out.println("Discount applied: " + (int)(discount * 100) + "%" );
+        // Display the final price of an item.
         System.out.println("Final price after discount: PHP " + (int)finalPrice );
-        
+
+        // Close the scanner
         groceryStore.close();
     }
         
