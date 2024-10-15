@@ -1,8 +1,8 @@
 /** 
  * Title: Challenge in CC2 
  * Author: Tangonan, Kent Alfred T.
- * Date: September 22, 2024
- * Time: 23:21
+ * Date: October 15, 2024
+ * Time: 21:39
  * Location: Philippines
  */
 import java.util.Scanner;
@@ -41,6 +41,7 @@ public class ClassroomAttendanceSystem {
         System.out.println("Total present: " + presentCount);
         System.out.println("Total absent: " + absentCount);
 
-        attendance.close(); // Closing the scanner object
+        // Closing the scanner object
+        attendance.close(); 
     }
 }
